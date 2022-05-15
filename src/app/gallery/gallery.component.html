@@ -1,0 +1,37 @@
+<p-galleria [value]="photos" [responsiveOptions]="responsiveOptions" [containerStyle]="{'max-width': '100%'}"
+  [showThumbnails]="false" [showIndicators]="true" [showIndicatorsOnItem]="true" [numVisible]="5" class="gallery"
+  [circular]="true" [showItemNavigators]="true">
+  <ng-template pTemplate="item" let-item>
+
+    <div class="row" style="width: 100%;">
+      <div class="col-3" style="color: aliceblue" *ngIf="item.description.length>=2">
+
+        <div class="container px-4 px-lg-5" style="margin-top: 20px;" >
+          <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-lg-12 col-xl-12 text-center">
+              {{item.description}}
+              <hr class="divider" />
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="col">
+        <img [src]="item.previewImageSrc" style="width: 100%; display: block;" />
+      </div>
+
+    </div>
+
+
+  </ng-template>
+
+  <ng-template pTemplate="thumbnail" let-item>
+
+    <div class="p-grid p-nogutter p-justify-center">
+      <img [src]="item.thumbnailImageSrc" style="width: 150px" />
+    </div>
+
+  </ng-template>
+</p-galleria>

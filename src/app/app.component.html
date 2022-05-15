@@ -1,0 +1,272 @@
+<body id="page-top">
+  <!-- Navigation-->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+    <div class="container px-4 px-lg-5">
+      <a class="navbar-brand" href="#page-top">rnrobles</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+        aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ms-auto my-2 my-lg-0">
+          <li class="nav-item"><a class="nav-link" href="#about">{{idioma.menu.menu1}}</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">{{idioma.menu.menu2}}</a></li>
+          <li class="nav-item"><a class="nav-link" href="#portfolio">{{idioma.menu.menu3}}</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">{{idioma.menu.menu4}}</a></li>
+          <li class="nav-item" *ngIf="ingles"><a class="nav-link"
+              (click)="changeLang(false)">{{lang.language.language}}</a></li>
+          <li class="nav-item" *ngIf="!ingles"><a class="nav-link"
+              (click)="changeLang(true)">{{lang2.language.language}}</a></li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Masthead-->
+  <header class="masthead">
+    <div class="container px-4 px-lg-5 h-100">
+      <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
+        <div class="col-lg-8 align-self-end">
+          <h1 class="text-white font-weight-bold">Frontend-Backend Developer</h1>
+          <hr class="divider" />
+        </div>
+        <div class="col-lg-8 align-self-baseline">
+          <p class="text-white-75 mb-5">{{idioma.presentation.init}}
+          </p>
+          <a class="btn btn-primary btn-xl" href="#about">{{idioma.presentation.button}}</a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- About-->
+  <section class="page-section bg-primary" id="about">
+    <div class="container px-4 px-lg-5">
+      <div class="row gx-4 gx-lg-5 justify-content-center">
+        <div class="col-lg-8 text-center">
+          <h2 class="text-white mt-0"> {{idioma.about.hello}}</h2>
+          <hr class="divider divider-light" />
+          <p class="text-white-75 mb-4">{{idioma.about.main}}
+          </p>
+          <a class="btn btn-light btn-xl" href="#services">{{idioma.about.button}}</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Services-->
+
+  <section class="page-section" id="services">
+    <div class="container px-4 px-lg-5">
+      <h2 class="text-center mt-0">{{idioma.Services.title}}</h2>
+      <hr class="divider" />
+      <div class="row gx-4 gx-lg-5">
+        <div class="col-lg-3 col-md-6 text-center">
+          <div class="mt-5">
+            <div class="mb-2"><i class="bi-laptop fs-1 text-primary"></i></div>
+            <h3 class="h4 mb-2">Frontend Developer</h3>
+            <h6><strong>Frameworks:</strong></h6>
+            <p class="text-muted mb-0">Angular</p>
+            <h6></h6>
+            <h6><strong>{{idioma.Services.language}}</strong></h6>
+            <p class="text-muted mb-0">JavaScript, HTML, CSS, Sass</p>
+
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 text-center">
+          <div class="mt-5">
+            <div class="mb-2"><i class="bi-gear fs-1 text-primary"></i></div>
+            <h3 class="h4 mb-2">Backend Developer</h3>
+            <h6><strong>Frameworks:</strong></h6>
+            <p class="text-muted mb-0">NestJS, JavaEE</p>
+            <h6></h6>
+            <p class="text-muted mb-0"> </p>
+            <h6><strong>{{idioma.Services.language}}</strong></h6>
+            <p class="text-muted mb-0">JavaScript, Java, Dart, C# </p>
+            <h6></h6>
+
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 text-center">
+          <div class="mt-5">
+            <div class="mb-2"><i class="bi-globe fs-1 text-primary"></i></div>
+            <h3 class="h4 mb-2">Infraestructure</h3>
+            <h6><strong>{{idioma.Services.used}}</strong></h6>
+            <p class="text-muted mb-0"> Docker, Wildfly</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 text-center">
+          <div class="mt-5">
+            <div class="mb-2"><i class="bi-tools fs-1 text-primary"></i></div>
+            <h3 class="h4 mb-2">Tools</h3>
+            <h6><strong>{{idioma.Services.used}}</strong></h6>
+            <p class="text-muted mb-0"> NodeJs</p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section id="services" style="margin-bottom: 100px;">
+    <div class="container px-4 px-lg-5">
+      <h2 class="text-center mt-0">{{idioma.Services.certificate}}</h2>
+      <hr class="divider" />
+      <div class="row gx-2 gx-lg-2">
+        <div class="col-lg-3 col-md-6 text-center">
+          <div class="mt-5">
+
+            <div style="margin-top: 20px;">
+              <figure class="Career-badge  is-spanish"><img
+                  src="https://static.platzi.com/media/learningpath/golden_badges/453bc71c-39e5-4228-9153-722954c24f95.jpg"
+                  width="50" alt="Node.js: Desarrollo Backend con JavaScript" height="50"></figure>
+              <a class="nav-link" href="https://platzi.com/p/rnrobles/ruta/45-desarrollo-angular/diploma/detalle/"
+                target="_blank">Frontend con Angular</a>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 text-center">
+          <div class="mt-5">
+
+            <div style="margin-top: 20px;">
+              <figure class="Career-badge  is-spanish"><img
+                  src="https://static.platzi.com/media/learningpath/golden_badges/d4ab6c44-b5f0-483f-8c3e-5edda3aefd3e.jpg"
+                  width="50" alt="Node.js: Desarrollo Backend con JavaScript" height="50"></figure>
+              <a class="nav-link" href="https://platzi.com/p/rnrobles/ruta/55-backend-javascript/diploma/detalle/"
+                target="_blank">Node.js: Desarrollo Backend con JavaScript</a>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 text-center">
+          <div class="mt-5">
+
+            <div style="margin-top: 20px;">
+              <figure class="Career-badge  is-spanish"><img
+                  src="https://static.platzi.com/media/learningpath/golden_badges/836a7013-4e85-483a-8af4-cc793e80c4cd.jpg"
+                  width="50" alt="Desarrollo Backend con Java" height="50"></figure>
+              <a class="nav-link" href="https://platzi.com/p/rnrobles/ruta/45-desarrollo-angular/diploma/detalle/"
+                target="_blank">Desarrollo Backend con Java</a>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-12 text-center">
+          <div class="mt-5">
+            <div class="mb-2"><i class="bi-easel fs-1" style="color: rgb(235, 166, 18);"></i></div>
+            <a class="nav-link" href="https://platzi.com/p/rnrobles" target="_blank"> {{idioma.Services.courses}}</a>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+
+  </section>
+
+
+
+  <!-- Portfolio-->
+  <div id="portfolio">
+
+    <div class="container-fluid p-5">
+      <div class="row g-0">
+        <div class="col-lg-4 col-sm-6">
+          <a class="portfolio-box" title="Project Name" (click)="show('erp')">
+            <img src="/assets/capturas/erp/erp-main.png" alt="..." style=" height: 300px; width: 100%;" />
+            <div class="portfolio-box-caption">
+              <div class="project-category text-white-50">ERP</div>
+              <div class="project-name">Sistema de punto de venta</div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <a class="portfolio-box" title="Project Name" (click)="show('entrevista')">
+            <img src="/assets/capturas/entrevista/entrevista-main.png" alt="..." style=" height: 300px; width: 100%;" />
+            <div class="portfolio-box-caption">
+              <div class="project-category text-white-50">ERP</div>
+              <div class="project-name">Sistema de punto de venta</div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <a class="portfolio-box" title="Project Name" (click)="show('agenda')">
+            <img src="/assets/capturas/agenda/main.png" alt="..." style=" height: 300px; width: 100%;" />
+            <div class="portfolio-box-caption">
+              <div class="project-category text-white-50">Agenda</div>
+              <div class="project-name">Sistema de Administración de la Plataforma de Indicadores</div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <a class="portfolio-box" title="Project Name" (click)="show('entrevista')">
+            <img src="/assets/capturas/documental/main.png" alt="..." style=" height: 300px; width: 100%;" />
+
+            <div class="portfolio-box-caption">
+              <div class="project-category text-white-50">Gestion Documental</div>
+              <div class="project-name">Sistema de Gestion De Documentos </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <a class="portfolio-box" title="Project Name" (click)="show('entrevista')">
+            <img src="/assets/capturas/servicio/main.png" alt="..." style=" height: 300px; width: 100%;" />
+            <div class="portfolio-box-caption">
+              <div class="project-category text-white-50">Servicios Rest</div>
+              <div class="project-name">Servicios Rest con Swagger</div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <a class="portfolio-box" title="Project Name" (click)="show('herramientas')">
+            <img src="/assets/capturas/herramientas/main.png" alt="..." style=" height: 300px; width: 100%;" />
+            <div class="portfolio-box-caption p-3">
+              <div class="project-category text-white-50">Herramientas</div>
+              <div class="project-name">Gitlab, Minio, Wildfly</div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Call to action-->
+  <section class="page-section bg-dark text-white">
+    <div class="container px-4 px-lg-5 text-center">
+      <!--       <h2 class="mb-4">Free Download at Start Bootstrap!</h2>
+ -->
+      <!--       <a class="btn btn-light btn-xl" href="https://startbootstrap.com/theme/creative/">Download Now!</a>
+ -->
+    </div>
+  </section>
+  <!-- Contact-->
+  <section class="page-section" id="contact">
+    <div class="container px-4 px-lg-5">
+      <div class="row gx-4 gx-lg-5 justify-content-center">
+        <div class="col-lg-8 col-xl-6 text-center">
+          <h2 class="mt-0">{{idioma.Services.contact}}</h2>
+          <hr class="divider" />
+
+        </div>
+      </div>
+      <div class="row gx-4 gx-lg-5 justify-content-center">
+        <div class="col-lg-4 text-center mb-5 mb-lg-0">
+          <i class="bi-envelope fs-2 mb-3 text-muted"></i>
+          rnrobles.dev@gmail.com
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Footer-->
+  <footer class="bg-dark text-white py-5">
+    <div class="container px-4 px-lg-5">
+      <div class="small text-center text-muted">Copyright &copy; 2021 - rnrobles</div>
+
+    </div>
+
+  </footer>
+  <!-- Bootstrap core JS-->
+
+</body>
+
+<router-outlet></router-outlet>
