@@ -44,7 +44,7 @@ export class AppComponent {
       language: 'Lenguajes que uso:',
       certificate: 'Certificado:',
       contact: '¡Mantengámonos en contacto!:',
-      courses: '75 cursos aprobados',
+      courses: '80 cursos aprobados',
     },
   };
 
@@ -77,7 +77,7 @@ export class AppComponent {
       language: 'Languages I speak:',
       certificate: 'Certificade:',
       contact: "Let's Get In Touch!:",
-      courses: '75 approved courses',
+      courses: '80 approved courses',
     },
   };
 
